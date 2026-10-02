@@ -81,7 +81,7 @@ doesn't quote or store those messages.
 - [jetpost.com](https://www.jetpost.com/welcome)
 - [Privacy policy](https://www.jetpost.com/privacy)
 - [Terms of service](https://www.jetpost.com/terms)
-- Support: [open an issue](https://github.com/send-co/jetpost-plugin/issues)
+- Support: [support@jetpost.com](mailto:support@jetpost.com) or [open an issue](https://github.com/send-co/jetpost-plugin/issues)
 
 ## License
 

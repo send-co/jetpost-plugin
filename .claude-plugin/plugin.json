@@ -5,7 +5,8 @@
   "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there.",
   "author": {
     "name": "Jetpost",
-    "url": "https://www.jetpost.com"
+    "url": "https://www.jetpost.com",
+    "email": "support@jetpost.com"
   },
   "homepage": "https://www.jetpost.com/welcome",
   "repository": "https://github.com/send-co/jetpost-plugin",
@@ -22,7 +23,7 @@
   ],
   "icon": "./assets/logo.png",
   "documentationUrl": "https://github.com/send-co/jetpost-plugin#readme",
-  "supportUrl": "https://github.com/send-co/jetpost-plugin/issues",
+  "supportUrl": "mailto:support@jetpost.com",
   "privacyPolicyUrl": "https://www.jetpost.com/privacy",
   "termsOfServiceUrl": "https://www.jetpost.com/terms"
 }
