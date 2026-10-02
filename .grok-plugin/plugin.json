@@ -1,0 +1,23 @@
+{
+  "name": "jetpost",
+  "version": "1.0.0",
+  "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there.",
+  "author": {
+    "name": "Jetpost",
+    "url": "https://www.jetpost.com"
+  },
+  "homepage": "https://www.jetpost.com/welcome",
+  "repository": "https://github.com/send-co/jetpost-plugin",
+  "license": "MIT",
+  "keywords": [
+    "notes",
+    "team notes",
+    "shared notes",
+    "feedback",
+    "comments",
+    "agent handoff",
+    "collaboration",
+    "jetpost"
+  ],
+  "logo": "assets/logo.svg"
+}

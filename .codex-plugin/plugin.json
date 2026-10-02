@@ -1,0 +1,37 @@
+{
+  "name": "jetpost",
+  "version": "1.0.0",
+  "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there.",
+  "author": {
+    "name": "Jetpost",
+    "url": "https://www.jetpost.com"
+  },
+  "license": "MIT",
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Jetpost",
+    "shortDescription": "Team notes for people + agents",
+    "longDescription": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there. Notes live in your Jetpost inbox, outside any one chat. Share a note with teammates, get comments on it, and let any connected agent read, edit or add to it.",
+    "developerName": "Jetpost",
+    "category": "Productivity",
+    "capabilities": [
+      "Create notes and share them with teammates",
+      "Search and read notes you wrote or received",
+      "Edit or add to a note",
+      "Comment on a note or reply in a thread",
+      "Add images to a note"
+    ],
+    "websiteURL": "https://www.jetpost.com/welcome",
+    "supportURL": "https://github.com/send-co/jetpost-plugin/issues",
+    "privacyPolicyURL": "https://www.jetpost.com/privacy",
+    "termsOfServiceURL": "https://www.jetpost.com/terms",
+    "defaultPrompt": [
+      "Make a Jetpost note of what we decided",
+      "What's new in my Jetpost inbox?",
+      "Share this note with my team for feedback"
+    ],
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png"
+  }
+}

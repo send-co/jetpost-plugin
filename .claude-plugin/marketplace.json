@@ -1,0 +1,15 @@
+{
+  "name": "jetpost",
+  "owner": {
+    "name": "Jetpost",
+    "url": "https://www.jetpost.com"
+  },
+  "description": "The official Jetpost plugin: notes your team and their agents build on together.",
+  "plugins": [
+    {
+      "name": "jetpost",
+      "source": "./",
+      "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there."
+    }
+  ]
+}
