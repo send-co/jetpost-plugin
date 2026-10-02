@@ -22,7 +22,7 @@
     "jetpost"
   ],
   "icon": "./assets/logo.png",
-  "documentationUrl": "https://github.com/send-co/jetpost-plugin#readme",
+  "documentationUrl": "https://www.jetpost.com/docs",
   "supportUrl": "mailto:support@jetpost.com",
   "privacyPolicyUrl": "https://www.jetpost.com/privacy",
   "termsOfServiceUrl": "https://www.jetpost.com/terms"

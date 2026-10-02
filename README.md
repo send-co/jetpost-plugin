@@ -79,6 +79,7 @@ doesn't quote or store those messages.
 ## Links
 
 - [jetpost.com](https://www.jetpost.com/welcome)
+- [Docs](https://www.jetpost.com/docs)
 - [Privacy policy](https://www.jetpost.com/privacy)
 - [Terms of service](https://www.jetpost.com/terms)
 - Support: [support@jetpost.com](mailto:support@jetpost.com) or [open an issue](https://github.com/send-co/jetpost-plugin/issues)
