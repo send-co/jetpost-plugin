@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.jetpost/jetpost",
+  "title": "Jetpost",
+  "description": "Notes your team and their agents build on together: write, share, comment and edit.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.jetpost.com/welcome",
+  "repository": {
+    "url": "https://github.com/send-co/jetpost-plugin",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.jetpost.com/mcp"
+    }
+  ]
+}
