@@ -5,6 +5,29 @@
   "description": "Notes your team and their agents build on together: write, share, comment and edit.",
   "version": "1.0.0",
   "websiteUrl": "https://www.jetpost.com/welcome",
+  "icons": [
+    {
+      "src": "https://www.jetpost.com/brand/jetpost-icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
+    {
+      "src": "https://www.jetpost.com/brand/jetpost-icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://www.jetpost.com/brand/jetpost-icon-48.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "48x48"
+      ]
+    }
+  ],
   "repository": {
     "url": "https://github.com/send-co/jetpost-plugin",
     "source": "github"
