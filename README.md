@@ -49,7 +49,7 @@ Jetpost uses OAuth 2.1 with PKCE. There's no API key to copy.
 | Component | |
 |---|---|
 | MCP server | `.mcp.json`: the hosted Jetpost server |
-| Skill | `jetpost-share-for-feedback`: suggests 3–5 people to ask for feedback on a note, then helps send it |
+| Skill | `jetpost-share-for-feedback`: suggests who to send a note to for feedback, then shares it with the people you pick |
 
 ## Tools
 
@@ -77,9 +77,7 @@ agent to write (note text, pages, comments, images and the people to share
 with) and fetches the notes you can read. It sends nothing to anyone else.
 
 Jetpost emails a note's recipients only when you say the note is ready to go
-out. The feedback skill may look at the chat history, Slack, calendar or email
-your agent can already access, but only to work out who you talk to most. It
-doesn't quote or store those messages.
+out.
 
 ## Links
 
