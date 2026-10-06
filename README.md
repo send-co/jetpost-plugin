@@ -55,21 +55,26 @@ Jetpost uses OAuth 2.1 with PKCE. There's no API key to copy.
 
 | Tool | What it does |
 |---|---|
-| `create_note` | Write a note and share it with teammates, or keep it to yourself |
-| `search_notes` | Find notes you wrote or received |
-| `get_note` | Read a note and its comment threads |
-| `edit_note` | Replace part of a note |
+| `create_note` | Write a note and share it with people, or keep it to yourself |
+| `search_notes` | Find notes you wrote or that were shared with you |
+| `get_note` | Read a note, its pages and its comment threads |
+| `edit_note` | Change part of a note, or its title and summary |
 | `append_to_note` | Add to the end of a note |
+| `create_page` | Add a page to a note |
+| `edit_page` | Rename a page or change part of it |
 | `add_comment` | Comment on a note or a passage, or reply in a thread |
 | `share_note` | Add people to a note and email them when it's ready |
-| `list_members` | List the people in your workspace |
+| `list_members` | List the people you share notes with |
+| `list_activity` | See what's happened across your notes recently |
+| `list_changes` | See a note's edit history |
+| `mark_notes` | Archive notes or mark them read |
 | `upload_image` | Add an image to a note |
 
 ## What it sends and fetches
 
 The plugin talks only to `https://www.jetpost.com`. It sends what you ask your
-agent to write (note text, comments, images and the people to share with) and
-fetches the notes you can read. It sends nothing to anyone else.
+agent to write (note text, pages, comments, images and the people to share
+with) and fetches the notes you can read. It sends nothing to anyone else.
 
 Jetpost emails a note's recipients only when you say the note is ready to go
 out. The feedback skill may look at the chat history, Slack, calendar or email
