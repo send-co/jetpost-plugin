@@ -68,13 +68,17 @@ Jetpost uses OAuth 2.1 with PKCE. There's no API key to copy.
 | `list_activity` | See what's happened across your notes recently |
 | `list_changes` | See a note's edit history |
 | `mark_notes` | Archive notes or mark them read |
-| `upload_image` | Add an image to a note |
+| `upload_image` | Add an image from your computer to a note. Returns a signed upload address and headers; your agent sends the file from your shell with one fixed `curl -X PUT` step written in the tool description. PNG, JPEG, GIF or WebP, up to 20 MB; the address expires in 15 minutes. Without a shell, your agent asks you to paste the image into the note in the app instead. |
 
 ## What it sends and fetches
 
-The plugin talks only to `https://www.jetpost.com`. It sends what you ask your
-agent to write (note text, pages, comments, images and the people to share
-with) and fetches the notes you can read. It sends nothing to anyone else.
+The plugin talks to `https://www.jetpost.com`. It sends what you ask your
+agent to write (note text, pages, comments and the people to share with) and
+fetches the notes you can read. The one exception is an image upload: the file
+goes from your shell straight to Jetpost's image storage, Vercel Blob
+(`https://vercel.com/api/blob`), using the one-time address `upload_image`
+returns. Images are read back through jetpost.com. It sends nothing to anyone
+else.
 
 Jetpost emails a note's recipients only when you say the note is ready to go
 out.
