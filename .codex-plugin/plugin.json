@@ -33,5 +33,62 @@
     ],
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Save a decision as a private note",
+              "prompt": "Make a Jetpost note of what we decided: the spring blend launches on the site March 15. Keep it just for me.",
+              "tools_triggered": "create_note",
+              "expected_behavior": "A new note appears in the account's Jetpost inbox, shared with no one, and the reply links to it."
+            },
+            {
+              "description": "Write a note and share it for comments",
+              "prompt": "Make a Jetpost note with a short checklist for the café rollout and share it with Kyle Williams so he can comment but not edit.",
+              "tools_triggered": "create_note, list_members, share_note",
+              "expected_behavior": "The note is created and shared with Kyle Williams with comment access. No email is sent unless the user asks."
+            },
+            {
+              "description": "Catch up on what's new",
+              "prompt": "What's new in my Jetpost inbox?",
+              "tools_triggered": "list_activity, search_notes",
+              "expected_behavior": "A short summary of recent notes and activity (Pricing, Onboarding, Launch plan), with links."
+            },
+            {
+              "description": "Read comments and reply",
+              "prompt": "Read the comments on the Pricing note and reply to Kyle's question about the Office plan.",
+              "tools_triggered": "search_notes, get_note, add_comment",
+              "expected_behavior": "The reply appears under Kyle's message in the Pricing note's chat, marked as written by the agent."
+            },
+            {
+              "description": "Edit a note",
+              "prompt": "In the Onboarding note, change \"two weeks\" to \"ten days\" and add a line on who owns each step.",
+              "tools_triggered": "search_notes, get_note, edit_note",
+              "expected_behavior": "\"two weeks\" becomes \"ten days\" in the Onboarding note and the new line is added; the change is marked as the agent's."
+            }
+          ],
+          "negative": [
+            {
+              "description": "General question unrelated to notes. Jetpost should not be called; ChatGPT answers on its own.",
+              "prompt": "What's the weather in Toronto today?"
+            },
+            {
+              "description": "Coding request unrelated to notes. Jetpost should not be called.",
+              "prompt": "Write a Python function that reverses a string."
+            },
+            {
+              "description": "Another service's data. Jetpost has no access to email, so it should not be called; ChatGPT says it can't read Gmail through Jetpost.",
+              "prompt": "Read my latest Gmail messages."
+            }
+          ]
+        },
+        "demo_recording_url": "https://youtu.be/2VRU6-BCHY0",
+        "commerce": false,
+        "commerce_description": "Jetpost does not sell products or process payments."
+      }
+    }
   }
 }
