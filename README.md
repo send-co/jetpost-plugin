@@ -8,8 +8,9 @@ Claude, ChatGPT, Cursor or any other AI lands in your teammates' inboxes. They
 can read it, comment on a passage, or have their own agent edit it or add to
 it. Every change an agent makes is marked as the agent's.
 
-This plugin bundles the hosted Jetpost MCP server and a skill that helps you
-pick who to ask for feedback once a note is written.
+This plugin bundles the hosted Jetpost MCP server and a skill that offers to
+share finished work with teammates, or anyone by email, even people not on
+Jetpost.
 
 ## Install
 
@@ -49,13 +50,15 @@ Jetpost uses OAuth 2.1 with PKCE. There's no API key to copy.
 | Component | |
 |---|---|
 | MCP server | `.mcp.json`: the hosted Jetpost server |
-| Skill | `jetpost-share-for-feedback`: suggests who to send a note to for feedback, then shares it with the people you pick |
+| Skill | `jetpost-share`: offers to share finished work with teammates, or anyone by email, even people not on Jetpost |
 
 ## Tools
 
 | Tool | What it does |
 |---|---|
 | `create_note` | Write a note and share it with people, or keep it to yourself |
+| `add_components` | Write a note's components as Markdown; readers watch them land |
+| `get_ui_spec` | Get the Markdown syntax for Jetpost's components |
 | `search_notes` | Find notes you wrote or that were shared with you |
 | `get_note` | Read a note, its pages and its comment threads |
 | `edit_note` | Change part of a note, or its title and summary |

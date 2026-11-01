@@ -1,6 +1,6 @@
 {
   "name": "jetpost",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there.",
   "author": {
     "name": "Jetpost",
@@ -17,6 +17,7 @@
     "category": "Productivity",
     "capabilities": [
       "Create notes and share them with teammates",
+      "Email a note to anyone, even people not on Jetpost",
       "Search and read notes you wrote or received",
       "Edit or add to a note",
       "Comment on a note or reply in a thread",
@@ -29,7 +30,7 @@
     "defaultPrompt": [
       "Make a Jetpost note of what we decided",
       "What's new in my Jetpost inbox?",
-      "Share this note with my team for feedback"
+      "Send this to my team"
     ],
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/logo.png"
@@ -68,6 +69,12 @@
               "prompt": "In the Onboarding note, change \"two weeks\" to \"ten days\" and add a line on who owns each step.",
               "tools_triggered": "search_notes, get_note, edit_note",
               "expected_behavior": "\"two weeks\" becomes \"ten days\" in the Onboarding note and the new line is added; the change is marked as the agent's."
+            },
+            {
+              "description": "Email a plan to someone not on Jetpost",
+              "prompt": "Make a Jetpost note of this launch plan and send it to sam@acme.com.",
+              "tools_triggered": "create_note, add_components, share_note",
+              "expected_behavior": "The note is created and emailed to sam@acme.com, who gets an account waiting for them; the reply links to the note."
             }
           ],
           "negative": [

@@ -1,7 +1,7 @@
 {
   "name": "jetpost",
   "displayName": "Jetpost",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there.",
   "author": {
     "name": "Jetpost",
@@ -15,7 +15,7 @@
     "notes",
     "team notes",
     "shared notes",
-    "feedback",
+    "sharing",
     "comments",
     "agent handoff",
     "collaboration",
