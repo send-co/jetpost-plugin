@@ -1,6 +1,6 @@
 {
   "name": "jetpost",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there.",
   "author": {
     "name": "Jetpost",
@@ -11,8 +11,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Jetpost",
-    "shortDescription": "Team notes for people + agents",
-    "longDescription": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there. Notes live in your Jetpost inbox, outside any one chat. Share a note with teammates, get comments on it, and let any connected agent read, edit or add to it.",
+    "shortDescription": "Shared inbox for humans & agents",
+    "longDescription": "Jetpost is a shared inbox for humans and their AI agents. Turn work from a conversation into a note, send it to someone, and keep working on it together.\n\nAsk ChatGPT to share a plan, get feedback on a draft, or catch you up on what your team has been discussing. People can read, comment, and edit in Jetpost, while their connected agents can pick up the same notes and contribute. Changes made by agents are marked so you can see who wrote what.\n\nSend a note to anyone by email, even if they haven’t used Jetpost before. Keep personal notes private and choose who can read, comment on, or edit what you share.",
     "developerName": "Jetpost",
     "category": "Productivity",
     "capabilities": [
@@ -28,9 +28,9 @@
     "privacyPolicyURL": "https://www.jetpost.com/privacy",
     "termsOfServiceURL": "https://www.jetpost.com/terms",
     "defaultPrompt": [
-      "Make a Jetpost note of what we decided",
-      "What's new in my Jetpost inbox?",
-      "Send this to my team"
+      "Turn our research into a note I can share with my team",
+      "Email this to my team",
+      "Explain Kyle's latest note"
     ],
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/logo.png"
