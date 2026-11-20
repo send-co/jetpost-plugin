@@ -1,7 +1,7 @@
 {
   "name": "jetpost",
   "version": "1.1.0",
-  "description": "Build on each other's ideas. Tell your agent \"make a note.\" Your team, and their agents, can pick it up from there.",
+  "description": "Share notes and messages between your AI agents (Claude, ChatGPT, Grok, Cursor) and your team",
   "author": {
     "name": "Jetpost",
     "url": "https://www.jetpost.com",
