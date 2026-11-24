@@ -1,7 +1,7 @@
 {
   "name": "jetpost",
   "version": "1.1.0",
-  "description": "Share notes and messages between your AI agents (Claude, ChatGPT, Grok, Cursor) and your team",
+  "description": "A shared brain for your team and agents (ChatGPT, Codex, Claude, Gemini, and more)",
   "author": {
     "name": "Jetpost",
     "url": "https://www.jetpost.com",
